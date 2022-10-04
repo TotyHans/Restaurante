@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
+@font-face {
+    font-family:'Calligraffitti', cursive;
+    src: url(/Practica/fonts/Calligraffitti-Regular.ttf);
+    font-family: "Open Sans";
+    src: url(/Practica/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+/*Header*/
+header{
+    width: 100%;
+    background:url("/Practica/img/bg.jpg") #281a0c;
+    background-size: cover;/**/
+    background-attachment: fixed;/*para que no se mueva el fondo*/
+    background-position: center 0;
+    z-index: 0;
+}
+header .contenedor{
+    position: relative;
+    height: 700px;
+}
+header .menu {
+width: 100%;
+text-align: right;
+}
+
+header .menu a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+    background-image:linear-gradient(#fff,#fff);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 5px;
+    transition: background-size .3s;
+}
+
+header .menu a:hover , a:focus{
+   background-size: 100% 2px;
+}
+header .textos{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+    font-variant: small-caps;
+}
+
+header .textos .nombre{
+    font-size: 50px;
+    font-weight: 600;
+}
+header .textos .nombre span{
+    font-weight: 100;
+}
+header .textos h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+/*Main*/
+main{
+    background:url(/Practica/img/bg-textura.png);
+    background-repeat: repeat;
+}
+.main .acerca-de .contenedor{
+    overflow: visible;
+    position: relative;
+}
+.main .acerca-de .foto{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+    
+}
+.main .acerca-de .foto img{
+width: 100%;
+vertical-align: top;
+}
+.acerca-de .contenedor article{
+    background: rgb(255, 255, 255);
+    padding: 42px;
+    width: 50%;
+    position :relative;
+    top: 120px;
+    z-index: 2;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
+.acerca-de .contenedor article h3{
+font-size: 50px;
+font-weight: 300;
+margin-bottom: 40px;
+}
+.acerca-de .contenedor article p{
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+/*Menu del main*/
+.main .menu{
+padding-top: 623px;
+margin-bottom: 50px;
+}
+.main .menu .titulo{
+    padding-top: 30px;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Calligraffitti', cursive;
+
+}
+
+.main .menu .contenedor-menu, .contenedor-menu2{
+    border: 2px solid #000;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+.main .menu article{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    background: url(Practica/img/menu-fondo.png);
+    
+}
+.main .menu .categoria{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family:'Almendra Display';
+    font-variant: small-caps; 
+    font: bold;   
+}
+.main .menu .platillo{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted #000;
+    overflow: hidden;
+}
+.main .menu .nombre{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+.main .menu .precio{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+.main .menu .descripcion{
+    font-size: 16px;
+    color:#676767;
+    clear: both;
+}
+/*main galeria*/
+.main .galeria{
+    overflow: hidden;
+}
+.main .galeria .foto{
+    width: 25%;
+    /*height: 475px;*/
+    float: left;
+}
+.main .galeria .foto img{
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+    object-fit: cover;
+}
+.main .galeria .foto img:hover{
+    opacity: 1;
+    -webkit-transition: all 3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+/*Ubicacion*/
+.main .ubicacion{
+    background: white;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.main .ubicacion .titulo{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom:40px;
+}
+.main .ubicacion .direccion{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.main .ubicacion .horarios{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.main .ubicacion .direccion .calle{
+margin-bottom: 15px;
+}
+.main .ubicacion .direccion .horarios h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana{
+width: 50%;
+float: left;
+text-align: center;
+}
+.main .mapa{
+    width: 100%;
+    overflow: hidden;
+}
+.main .mapa iframe{
+    width: 100%;
+    max-height: 600px;
+}
+/*footer*/
+footer{
+    background: #000;
+}
+footer .copyright{
+    text-align: center;
+    padding: 15px;
+    color:white;
+}
+/*MediaQueries*/
+@media screen and (max-width:800px){
+    header.contenedor{
+        position: static;
+        height: auto;
+    }
+    header .textos{
+        position: static;
+        margin:100px 0;
+    }
+
+    header .menu{
+        text-align: center;
+    }
+    header .menu a{
+        margin: 10px 20px;
+    }
+    header .textos .nombre{
+        font-size: 30px;
+    }
+    header .textos h3{
+        font-size: 18px;
+    }
+    .main .acerca-de .foto{
+        width: 100%;
+        position: relative;
+    }
+    .main .acerca-de article{
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px,0);
+    }
+    .main .menu{
+        padding-top: 300px;
+    }
+    .main .menu article{
+        width: 100%;
+    }
+    .main .galeria .foto{
+        width: 50%;
+    }
+    @media screen and(max-width:400px) {
+        .main .acerca-de article h3{
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+        .main .textos .nombre{
+            font-size: 15px;
+            height: auto;
+        }
+        header .contenedor nav{
+            width: 100%;
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+}

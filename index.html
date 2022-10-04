@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/Practica/js/jquery-3.6.1.min.js"></script>
+    <script src="/Practica/js/efectos.js"></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Restaurante</title>
+  </head>
+  <body>
+    <header>
+      <!--contenedor header-->
+      <div class="contenedor">
+        <nav class="menu">
+          <a href="#" id="btn-acerca-de">Acerca de</a>
+          <a href="#" id="btn-menu">Menu</a>
+          <a href="#" id="btn-galeria">Galeria</a>
+          <a href="#" id="btn-ubicacion">Ubicacion</a>
+        </nav>
+        <div class="textos">
+          <h1 class="nombre">Restaurante <span>El comedor</span></h1>
+          <h3>Lorem ipsum dolor !</h3>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <section class="acerca-de" id="acerca-de">
+        <div class="contenedor">
+          <div class="foto">
+            <img src="img/acerca-de.jpg" alt="" />
+          </div>
+          <article>
+            <h3>Acerca de</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit molestias ipsa odio, ullam tempore ab hic modi,
+              impedit sit fugit doloribus blanditiis dignissimos culpa!
+              Doloremque magnam rerum porro maxime sint.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              corporis unde fuga aut possimus exercitationem magni quaerat
+              laudantium in et id ut minima, necessitatibus cumque vel
+              voluptates itaque, aspernatur eius?
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="contenedor">
+          <h3 class="titulo" id="platillos">Menú</h3>
+          <div class="contenedor-menu">
+            <div class="contenedor-menu2">
+              <article>
+                <p class="categoria">Comida</p>
+                <div class="platillo">
+                  <p class="nombre">Huevos con jamon</p>
+                  <p class="precio">15</p>
+                  <p class="descripcion">Ricos huevos al gusto de cada quien</p>
+                </div>
+                <div class="platillo">
+                  <p class="nombre">Sandwich</p>
+                  <p class="precio">20</p>
+                  <p class="descripcion">Sandwich de papa</p>
+                </div>
+                <div class="platillo">
+                  <p class="nombre">Menudo</p>
+                  <p class="precio">50</p>
+                  <p class="descripcion">250 grs de pansa lo demas caldo</p>
+                </div>
+                <div class="platillo">
+                  <p class="nombre">Birria</p>
+                  <p class="precio">50</p>
+                  <p class="descripcion">A quien no le gusta la birria?</p>
+                </div>
+              </article>
+              <!--De tomar-->
+              <article>
+                <p class="categoria">Bebidas</p>
+                <div class="platillo">
+                  <p class="nombre">Chocomilk</p>
+                  <p class="precio">15</p>
+                  <p class="descripcion">Leche deslactosada con chocolate</p>
+                </div>
+                <div class="platillo">
+                  <p class="nombre">Jugo verde</p>
+                  <p class="precio">20</p>
+                  <p class="descripcion">Ricos vegetales hechos jugo</p>
+                </div>
+                <div class="platillo">
+                  <p class="nombre">Jugo de naranja</p>
+                  <p class="precio">30</p>
+                  <p class="descripcion">por si no te gusta el verde...</p>
+                </div>
+                <div class="platillo">
+                  <p class="nombre">Cafe</p>
+                  <p class="precio">25</p>
+                  <p class="descripcion">A quien no le gusta el cafe</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="galeria" id="galeria">
+        <div class="foto">
+          <img src="img/1.jpg" alt="" />
+        </div>
+        <div class="foto">
+          <img src="img/2.jpg" alt="" />
+        </div>
+        <div class="foto">
+          <img src="img/3.jpg" alt="" />
+        </div>
+        <div class="foto">
+          <img src="img/4.jpg" alt="" />
+        </div>
+        <div class="foto">
+          <img src="img/5.jpg" alt="" />
+        </div>
+        <div class="foto">
+          <img src="img/6.jpg" alt="" />
+        </div>
+        <div class="foto">
+          <img src="img/7.jpg" alt="" />
+        </div>
+        <div class="foto">
+          <img src="img/8.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="ubicacion" >
+        <div class="contenedor">
+          <h3 class="titulo" id="ubicacion">Ubicacion</h3>
+          <div class="direccion">
+            <p class="calle">la direccion</p>
+            <p class="telefono">(503) 455-4565</p>
+            <p class="direccion">elmail@mail.com</p>
+          </div>
+          <div class="horarios">
+            <h4>Horarios</h4>
+            <p class="entre-semana">Lunes a viernes <br />8:00 am a 9:00 pm</p>
+            <p class="fines-semana">
+              Sabado y domingo <br />11:00 am a 12:00 pm
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3733.6871918182837!2d-103.37559078451616!3d20.641603306256762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1664812019083!5m2!1ses-419!2smx"
+          width="1600"
+          height="550"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </section>
+    <footer>
+      <div class="contenedor">
+        <div class="copyright">
+          <p>Copyright Hans Castillo @</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
